@@ -1,0 +1,40 @@
+plugin.tx_wrs_pannellum {
+}
+
+page {
+	includeJSFooterlibs {
+		pannellum = EXT:wrs_pannellum/Resources/Public/Vendor/pannellum/pannellum.js
+	}
+	includeCSS {
+		pannellum = EXT:wrs_pannellum/Resources/Public/Vendor/pannellum/pannellum.css
+		pannellum_custom = EXT:wrs_pannellum/Resources/Public/Css/wrspannellum.css
+	}
+
+}
+
+tt_content.wrspannellum_view =< lib.contentElement
+tt_content.wrspannellum_view {
+	templateName = PanoramicView
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10 {
+			references {
+				table = tt_content
+				fieldName = image
+			}
+			as = images
+		}
+	}
+	templateRootPaths {
+		100 = EXT:wrs_pannellum/Resources/Private/Templates/
+		110 = {$plugin.tx_wrspannellum.view.templateRootPath}
+	}
+	partialRootPaths {
+		100 = EXT:wrs_pannellum/Resources/Private/Partials/
+		110 = {$plugin.tx_wrspannellum.view.partialRootPath}
+	}
+	layoutRootPaths {
+		100 = EXT:wrs_pannellum/Resources/Private/Layouts/
+		110 = {$plugin.tx_wrspannellum.view.layoutRootPath}
+	}
+}

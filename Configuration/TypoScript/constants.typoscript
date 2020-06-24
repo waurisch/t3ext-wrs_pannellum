@@ -1,0 +1,10 @@
+plugin.tx_wrs_pannellum {
+    view {
+        # cat=plugin.tx_wrspannellum/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:wrs_pannellum/Resources/Private/Templates/
+        # cat=plugin.tx_wrspannellum/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:wrs_pannellum/Resources/Private/Partials/
+        # cat=plugin.tx_wrspannellum/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:wrs_pannellum/Resources/Private/Layouts/
+    }
+}

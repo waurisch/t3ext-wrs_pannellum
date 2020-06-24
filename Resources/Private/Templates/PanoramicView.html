@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+	<f:if condition="{images}">
+		<div class="panorama-container">
+			<div id="panorama-{data.uid}"></div>
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() <f:format.raw value="{" />
+				pannellum.viewer('panorama-{data.uid}', <f:format.raw value="{" />
+					"type": "equirectangular",
+					"panorama": "{f:uri.image(image:images.0,absolute:1)}",
+					{f:if(condition:images.0.title, then:'"title":"{images.0.title}",')}
+				});
+			});
+		</script>
+	</f:if>
+</f:section>
+</html>

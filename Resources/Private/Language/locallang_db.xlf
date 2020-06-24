@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-06-18T15:20:11Z" product-name="wrs_pannellum">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.CType.wrspannellum_view">
+				<source>Panoramic view (Pannellum)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
