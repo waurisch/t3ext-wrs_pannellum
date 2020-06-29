@@ -1,4 +1,4 @@
-plugin.tx_wrs_pannellum {
+plugin.tx_wrspannellum {
     view {
         # cat=plugin.tx_wrspannellum/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:wrs_pannellum/Resources/Private/Templates/
