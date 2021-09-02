@@ -15,7 +15,6 @@ $EM_CONF[$_EXTKEY] = [
         'conflicts' => [],
         'suggests' => [],
     ],
-    'clearCacheOnLoad' => true,
-    'uploadfolder' => false
+    'clearCacheOnLoad' => true
 ];
 
